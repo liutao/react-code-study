@@ -8,23 +8,24 @@ npm start
 
 目录结构：
 
-src -
 
-	- app.js 一个组件
+	src -
 
-	- common.js 公用方法
+		- app.js 一个组件
 
-	- component.js 组件父类
+		- common.js 公用方法
 
-	- ComponentCollection.js 存放所有组件的容器（父组件如果包含了子组件需要创建子组件的实例，其实应该放在父组件上）
+		- component.js 组件父类
 
-	- dom.js dom操作的方法
+		- ComponentCollection.js 存放所有组件的容器（父组件如果包含了子组件需要创建子组件的实例，其实应该放在父组件上）
 
-	- gendom.js 根据ast渲染组件
+		- dom.js dom操作的方法
 
-	- jsxparse.js jsx字符串解析为ast
+		- gendom.js 根据ast渲染组件
 
-	- playground.js 入口文件
+		- jsxparse.js jsx字符串解析为ast
+
+		- playground.js 入口文件
 
 问题：
 

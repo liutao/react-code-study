@@ -15,6 +15,6 @@ export default class App extends Component{
 		this.setState({user: {name: 'changed name ' + index++}})
 	}
 	render(){
-		return gendom(jsxparse(`<div>{this.state.user.name}<button onClick="this.changeName">修改名字</button></div>`, this), this.parentNode);
+		return gendom(jsxparse(`<div>{user.name}<button onClick="changeName">修改名字</button></div>`, this), this.parentNode);
 	}
 }

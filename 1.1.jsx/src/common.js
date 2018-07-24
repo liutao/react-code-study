@@ -5,5 +5,5 @@ export function isReservedTag(tag){
 }
 
 export function getValue(str, obj){
-	return new Function(`return ${str};`).bind(obj)();
+	return new Function(`with(this){return ${str};}`).bind(obj)();
 }
